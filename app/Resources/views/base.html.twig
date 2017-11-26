@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('build/global.css') }}">
+    </head>
+    <body>
+        <header>
+            {{ include('default/navbar.html.twig') }}
+        </header>
+
+        <div class="container" id="app">
+        {% block body %}{% endblock %}
+        </div>
+        
+        {% block javascripts %}{% endblock %}
+        <script src="{{ asset('build/app.js') }}"></script>
+    </body>
+</html>

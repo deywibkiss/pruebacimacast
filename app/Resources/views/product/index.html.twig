@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lista de Productos{% endblock %}
+
+{% block body %}
+    <products-list createroute="{{ path('product_new') }}"></products-list>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lista de Categorías{% endblock %}
+
+{% block body %}
+    <categories-list createroute="{{ path('category_new') }}"></categories-list>
+{% endblock %}

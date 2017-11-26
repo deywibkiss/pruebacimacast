@@ -1,0 +1,38 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import 'variables';
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+// set if you're also including font-awesome
+// $fa-font-path: "~font-awesome/fonts";
+
+// Bootstrap
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Custom
+body { padding-top: 70px; }
+
+.cima-table {
+	border: 1px solid #000;
+
+	tr, td {
+		border: 1px solid #000;
+		text-align: center;	
+	}
+
+
+	td {
+		padding: 5px;
+		
+		&.colored{
+			background-color: #CBEDF9;
+		}
+	}
+}
+
+.number-image {
+	width: 100%;
+}
